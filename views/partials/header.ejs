@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Yelp Camp </title>
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=EB+Garamond:wght@700&family=Grenze+Gotisch:wght@600&family=Markazi+Text:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/stylesheets/main.css">
+<style type="text/css">
+    body{
+        font-family: 'Markazi Text', serif;
+    }
+</style>
+
+
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container">
+    <div class="navbar-header">
+    	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">
+        <i class="fa fa-globe " aria-hidden="true"></i>
+        Yelp Camp
+      </a>
+    </div>
+    <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+    	<ul class="nav navbar-nav">
+            <% if(!user){ %>
+    		<li><a href="/login">Login</a></li>
+    		<li><a href="/register">Sign Up</a></li>
+        <% } else { %>
+    		<li><a href="/logout">Logout</a></li>
+        <% } %>
+    	</ul>
+    </div>
+  </div>
+</nav>
+
